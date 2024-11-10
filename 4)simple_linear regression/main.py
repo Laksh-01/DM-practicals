@@ -1,25 +1,25 @@
 
-# class MeraLR:
+class MeraLR:
 
-#     def __init__(self):
-#         self.m = None
-#         self.b = None
+    def __init__(self):
+        self.m = None
+        self.b = None
 
-#     def fit(self,X_train,y_train):
-#         num = 0
-#         den = 0
-#         for i in range(X_train.shape[0]):
-#             num += ((X_train[i] - X_train.mean())*(y_train[i] - y_train.mean()))
-#             den += ((X_train[i] - X_train.mean())*(X_train[i] - X_train.mean()))
+    def fit(self,X_train,y_train):
+        num = 0
+        den = 0
+        for i in range(X_train.shape[0]):
+            num += ((X_train[i] - X_train.mean())*(y_train[i] - y_train.mean()))
+            den += ((X_train[i] - X_train.mean())*(X_train[i] - X_train.mean()))
 
-#         self.m = num/den
-#         self.b = y_train.mean() - (self.m * X_train.mean())
-#         print(self.m)
-#         print(self.b)
+        self.m = num/den
+        self.b = y_train.mean() - (self.m * X_train.mean())
+        print(self.m)
+        print(self.b)
 
-#     def predict(self,X_test):
-#         print(X_test)
-#         return self.m * X_test + self.b
+    def predict(self,X_test):
+        print(X_test)
+        return self.m * X_test + self.b
 
 
 import pandas as pd
