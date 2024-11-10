@@ -1,5 +1,14 @@
 pandas
+<<<<<<< HEAD
+matplotlib
+scikit-learn
+seaborn
+pgmpy
+sqlalchemy
+numpy
+=======
 numpy
 scikit-learn
 sqlalchemy
 pgmpy
+>>>>>>> 931eecb6e4cde138f97ae09f6c2d4b980a8c3dab
